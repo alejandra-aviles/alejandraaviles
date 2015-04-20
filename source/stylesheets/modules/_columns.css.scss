@@ -1,0 +1,71 @@
+.columns {
+	@include group;
+}
+
+.columns-medios .column {
+	width:50%;
+}
+
+.columns {
+	float:left;
+	width: 100%;
+
+	h4{
+		padding-top: 30px;
+		padding-bottom: 10px;
+		text-transform: uppercase;
+		font-style: italic;
+		letter-spacing: 1.5px;
+
+	}
+}
+
+.column-uncuarto {
+	width: 10%;
+	padding-right: 10px;
+	h5{
+		font-size: 0.7em;
+		float: right;
+		color: grey;
+		padding-top: 5px;
+		letter-spacing: 0.5px;
+	}
+} 
+
+.column-trescuarto {
+	width: 90%;
+	padding-right: 100px;
+
+	p {
+		font-size: 0.9em;
+		font-weight: 100;
+		font-family: "georgia";
+	}
+
+	a {
+		color: rgb(67,67,207);
+	}
+
+	a:hover {
+		border-bottom: 1px solid rgb(67,67,207);
+	}
+
+	img {
+		width: 30%;
+		height: 30%;
+	}
+}
+
+.column-medios {
+	width: 75%;
+	padding-bottom: 40px;
+}
+
+.column-tercios {
+	width: 60%;
+	padding-bottom: 15px;
+
+	p {
+		font-size: 0.8em;
+	}
+}
