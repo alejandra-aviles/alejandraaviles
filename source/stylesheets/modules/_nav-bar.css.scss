@@ -1,0 +1,38 @@
+.nav-bar {
+	margin-bottom: 15px;
+	margin-top: 50px;
+
+	a {
+		margin-right: 15px;
+		font-size: 24px;
+		font-weight: 500;
+		color: #000544;
+		letter-spacing: 0.1px;
+	}
+
+	a:hover {
+		color: blue;
+	}
+
+	.logo {
+		display: inline-block;
+		h1 {
+		font-size: 24px;
+		font-weight: 500;
+		margin-right: 15px;
+		}
+
+	}
+
+	.contact {
+		padding-right: 5px;
+		padding-top: 15px;
+		float: right;
+			font-size: 13px !important;
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: 1px;
+
+	
+	}
+}

@@ -1,0 +1,31 @@
+.cv {
+	padding-top: 60px;
+	header {
+		padding-top: 40px;
+		padding-bottom: 12px;
+	}
+	h3  {
+		line-height: 20px;
+		letter-spacing: 1px;
+	}
+	width: 100%;
+	section {
+		padding-bottom: 60px;
+	}
+	h5 {
+		font-weight: 700;
+	}
+
+	h6 {
+		text-align: right;
+		font-size: 1.1em;
+		padding-right: 20px;
+		line-height: 30px;
+	}
+	p {
+		letter-spacing: 1px;
+		font-size: 1.1em;
+		line-height: 30px;
+		padding-bottom: 0;
+	}
+}

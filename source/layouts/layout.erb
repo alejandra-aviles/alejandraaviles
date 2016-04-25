@@ -1,77 +1,33 @@
 <!doctype html>
 <html>
 <head>
-
   <meta charset="utf-8">
-
   <!-- Always force latest IE rendering engine or request Chrome Frame -->
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
   <!-- Use title if it's in the page YAML frontmatter -->
   <title><%= data.page.title || "Alejandra Avil&eacute;s" %></title>  
-
-  
-  <script type="text/javascript" src="//use.typekit.net/tnp4ijk.js"></script>
+  <script src="https://use.typekit.net/czs7nam.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag "screen" %>
-
 <body class="<%= page_classes %>">
-  <div id="sidebar">
-    <ul class="intro">
+<div class="main">
+  <div class="nav-bar">
     <div class="logo">
-        <h5><a href="/">Alejandra Avilés</a></h5>
+      <h1>alejandra avilés</h1>
     </div>
-      <h6><a href="mailto:alehandra.aviles@gmail.com">alehandra.aviles@gmail.com</a></h6>
-     <!--  <h5><a target="dossier" href="/pdf/dossier-aviles.pdf">Dossier.pdf</h5> -->
-      <h5><a href="/about">About</a></h5>
-      </h5>
-      
-    
-      
-    </ul>
-
-    <ul class="proyect-nav">
-      <h5>Instalación</h5>
-        <li><a href="/intemperie">Hacia la intemperie</a></li>
-        <li><a href="/coralillo">Falsa coralillo</a></li>
-        <li><a href="/otraluna">Otra luna</a></li>
-        <li><a href="/signo">Signo</a></li>
-        <li><a href="/delrosa">Del rosa</a></li>
-        <li><a href="/paradise">Paradise</a></li>
-        <li><a href="/corte">Corte Amplificado</a></li>
-        <li><a href="/sentido">Sentido inverso</a></li>
-
-      <!-- <h5>Fotografía</h5>
-        <li><a href="/elmundo">El mundo que vivimos</a></li>
-         <li><a href="/coleccion">Consecuencias</a></li>
-         <li><a href="/anomalia">Anomalía</a></li>
-
-      <h5>Vídeo</h5>
-        <li><a href="/ultimodia">Último día de agosto</a></li>
-        <li><a href="/paseo">Paseo Rio Sonora</a></li>
-         <li><a href="/lamisma">La misma fruta</a></li>
-         <li><a href="/autoretrato">Autorretrato</a></li>
-         <li><a href="/elizabeth">Elizabeth</a></li>
-         <li><a href="/unpequeno">Un pequeño</a></li>
- -->
-      <h5>Texto</h5>
-        <li><a href="/texto_4">La barbarie</a></li>
-         <li><a href="/texto_1">Hacia la intemperie</a></li>
-         <li><a href="/texto_2">La misma fruta</a></li>
-         <li><a href="/texto_3">When we are strange</a></li>
-    </ul>
-    <div class="intro">
-      
-      
+    <a class="projects" href="/-projects">projects</a>
+    <a class="cv" href="/-cv">cv</a>
+    <a class="dossier" target="dossier" href="/alejandra-aviles-dossier.en.pdf">dossier.pdf</a>
+    <div class="contact">
+        <h5>alehandra.aviles@gmail.com</h5>    
     </div>
   </div>
-
+</div>
   <%= yield_content :fullpage %>
-    <div id="main" class="container">
   <%= yield %>
-  </div>
   <%= javascript_include_tag  "application" %>  
-  </body>
+</body>
 </html>

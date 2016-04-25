@@ -1,94 +1,53 @@
-* {
-	box-sizing: border-box;
-}
-
-html {
-	background: white;
-}
-
-body {
-	font-size: 16px;
-	font-family: "georgia";
-	font-weight: 100;
-	margin-bottom: 100px;
-
-	img {
-		width: 100%;
-		padding-bottom: 20px;
-	}
-}
-
 h1 {
-	font-size: 4.2em;
-	font-family: "georgia";
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	line-height: 1em;
-	letter-spacing: 2px;
+	font-size: 4em;
+	line-height: 1.3em;
+	font-weight: 600;
 }
 
 h2 {
-	font-size: 2.5em;
-	font-family: "georgia";
-	padding-bottom: 20px;
-	font-style: italic;
-
+	font-weight: 600;
+	font-size: 2em;
+	line-height: 1.3em;
+	letter-spacing: 1px;
 }
 
 h3 {
-	font-family: "georgia";
-	font-style: italic;
+}
+
+h4 {
 	font-size: 1.1em;
-	vertical-align: top;
-	padding-bottom: 40px;
-	letter-spacing: 0.8px;
 }
 
-
-h4 + h4 {
-	margin-top:-40px;
-}
-
-h5{
-	font-size: 0.8em;
+h5 {
+	font-size: 1.2em;
 	letter-spacing: 1px;
-	padding-bottom: 20px;
-	text-transform: uppercase;
-
 }
 
 h6 {
-
+	font-size: 0.9em;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+	line-height: 15px;
 }
 
-a {
-	text-decoration: none;
-	color: gray;
-}
 
 p {
-	font-family: "georgia";
-	font-weight: 100;
-	color:rgba(73,73,73,1);
-	font-size: 0.9em;
-	line-height: 1.4em;
-	letter-spacing: 0.5px;
-	padding-right: 150px;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: 1px;
 	padding-bottom: 20px;
-
 }
 
-p + img {
-	padding-top: 50px;
-}
+
 
 em {
 	font-style: italic;
 }
 
-a:hover {
-	color: rgba(145,145,145,1);
-} 
+img + h6 {
+	padding-bottom: 50px;
+}
+
 
 
 span {
@@ -96,12 +55,5 @@ span {
 	height: 3em;
 
 }
-
-iframe + p {
-	margin-top:30px;
-}
-
-
-
 
 

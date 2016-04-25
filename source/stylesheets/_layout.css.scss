@@ -1,98 +1,62 @@
-#main { width: 100%; }
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: white;
+}
+
+body {
+	font-family: "acumin-pro";
+	margin-bottom: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	width: 100%;
+	color: black;
+	::selection { background-color:#FFD5D5; color: #2D44E4;}
+}
+
+.main {
+	width: 100%;
+}
 
 .container {
-	padding-left:280px;
-	padding-right: 100px;
-	padding-top: 100px;
 	@include group;
-	// background-color: rgb(242,242,242);
+	width: 800px;
+	margin-right: auto;
+	margin-top: 40px;
 }
 
-#sidebar {
-	@include group;
-	z-index: 1000;
-	position: fixed;
-	width: 200px;
-	text-align: right;
-	border-right: 1px solid rgb(223,223,223);
-	overflow-y: auto;
-	padding-right: 35px;
-	height: 100vh;
+img {
+	width: 100%;
+	display: block;
+	padding-right: 5px;
+	padding-bottom: 5px;
 }
 
-.proyect-nav {
-
-	text-align: right;
-
-	li {
-		font-size: 0.8em;
-		font-weight: 400;
-		letter-spacing: 0.4px;
-		line-height: 17px;
-
-	}
-
-	h5 {
-		font-size: 0.7em;
-		color: black;
-		letter-spacing: 1px;
-		padding-top: 20px;
-		padding-bottom: 3px;
-		font-weight: 500;
-		font-family: "georgia";
-		text-transform: uppercase;
-		font-style: italic;
-	}
-
-	a {
-		color: rgb(81,81,81);
-	}
-
-	a:hover {
-		color: black;
-		background-color: rgb(242,242,242);
-		
-	}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: blue;
 }
 
-.intro {
-	padding-top:30px;
-	line-height: 17px;
-	font-family: "georgia";
-	
-	h5 {
-		font-size: 1em;
-		font-weight: 100;
-		line-height: 1.5em;
-		text-transform: none;
-		padding-bottom: 0;
-	}
+a:hover {
+	cursor: pointer;
+}
 
-	h6 {
-		font-size: 0.7em;
-		padding-top: 2px;
-	}
-
-
-	a {
-		color: black;
-	}
-
-	a:hover {
-		color: black;
-		background-color: rgb(242,242,242);
-		
-	}
-
-	.logo {
-
-		a:hover {
-		text-decoration: none;	
+body.-projects {
+	.nav-bar {
+		.projects {
+			color: blue;
 		}
-	
 	}
 }
-
-
-
-
+body.-cv {
+	.nav-bar {
+		.cv {
+			color: blue;
+		}
+	}
+}

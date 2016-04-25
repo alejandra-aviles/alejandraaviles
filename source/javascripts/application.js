@@ -1,3 +1,3 @@
 //= require 'royalslider'
-//= require 'modules/_royalslider'
-//= require "vendor/_slider"
+//= require_tree './modules'
+//= require_tree "./vendor"
