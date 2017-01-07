@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	$('.slider').each(function(index, sliderEl){
-		var sliderEl = $(sliderEl);
+	$('.slider-wrapper').each(function(index, sliderWrapperEl){
+		var sliderWrapperEl = $(sliderWrapperEl);
+		var sliderEl = $('.slider', sliderEl);
 		var sliderId = sliderEl.attr("id");
 		var sliderControlsEl = $(".slider-controls[data-slider='" + sliderId + "']");
 
@@ -11,6 +12,8 @@ $(document).ready(function(){
 		var sliderIndexesEl = $("[data-slider-index][data-slider='" + sliderId + "']");
 
 		var sliderIndex = 0;
+		var sliderTotal = slides.length;
+		console.log(sliderIndexesEl, sliderTotal);
 		var isTransitioning = false;
 
 		sliderControlsEl.find("[data-slider-action='next']").click(function(e){ 
@@ -22,7 +25,26 @@ $(document).ready(function(){
 			previous(); 
 		});
 
-		sliderEl.click(function(){ next(); });
+		function isRightSide(event) {
+			var width = sliderWrapperEl.width();
+			var sliderElX = sliderWrapperEl.position().left;
+			var xPosition = event.pageX - sliderElX;
+
+			return xPosition > width / 2;
+		}
+
+		function preferNext(event) {
+			return isRightSide(event) || !hasPrevious();
+		}
+
+		sliderEl.click(function(event){ 
+			preferNext(event) ? next() : previous();
+		});
+
+		sliderEl.mousemove(function (event) {
+			var cursor = preferNext(event) ? 'e-resize' : 'w-resize';
+			$(this).css('cursor', cursor);
+		});
 
 		function increaseIndex(){
 			sliderIndex = sliderIndex == slides.length-1 ? 0 : sliderIndex+1;
@@ -39,23 +61,31 @@ $(document).ready(function(){
 		}
 
 		function next(e){
-			if(!isTransitioning) {
+			if(!isTransitioning && hasNext()) {
 				var previous = sliderIndex;
 				increaseIndex();
 				transition(previous, sliderIndex);
 			}
 		}
 
+		function hasNext() {
+			return sliderIndex < sliderTotal;
+		}
+
 		function previous(e){
-			if(!isTransitioning && 0 < sliderIndex) {
+			console.log('previous');
+			if(!isTransitioning && hasPrevious()) {
 				var previous = sliderIndex;
 				decreaseIndex();
 				transition(previous, sliderIndex);
 			}
 		}
 
+		function hasPrevious() {
+			return 0 < sliderIndex;
+		}
+
 		function transition(currentIndex, nextIndex){
-			sliderEl.css("min-height", sliderEl.height());
 			isTransitioning = true;
 			return hide(currentIndex, function(){
 				return show(nextIndex, function(){
@@ -73,7 +103,6 @@ $(document).ready(function(){
 		}
 
 		slides[0].show();
-		console.log(slides[0]);
 		notifyIndexChanged();		
 	});
 });

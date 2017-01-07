@@ -1,0 +1,39 @@
+.main-nav  {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 3000;
+	background: white;
+	border-bottom: 5px solid black;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	margin-left: 35px;
+	width: 100%;
+	a {
+		font-size: 1.2em;
+		letter-spacing: 0.5px;
+		text-decoration: none;
+		padding-right: 50px;
+		padding-bottom: 6px;
+	}
+	.logo:hover {
+		color: black;
+	}
+	.work:hover {
+		color: #005aff;
+		border-bottom: 5px solid #005aff;
+	}
+
+	.about:hover {
+		color: red;
+		border-bottom: 5px solid red;
+	}
+	.text:hover {
+		color: #f38eff;
+		border-bottom: 5px solid #f38eff;
+	}
+	 .webdesign:hover {
+	 	color: orange;
+	 	border-bottom: 5px solid orange;
+	}
+} 

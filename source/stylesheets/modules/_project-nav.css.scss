@@ -1,0 +1,23 @@
+.project-nav {
+	h1 {
+		font-size: 2em;
+	}
+	a:hover {
+		color: #005aff;
+	}
+	.prev {
+		position: fixed;
+		right: 134px;
+		bottom: 50px;
+	}
+	.grid {
+		position: fixed;
+		right: 76px;
+		bottom: 50px;
+	}
+	.next {
+		position: fixed;
+		right: 27px;
+		bottom: 50px;
+	}
+}

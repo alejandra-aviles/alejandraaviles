@@ -1,47 +1,10 @@
 article {
-	padding-top: 60px;
-	header {
-		padding-bottom: 20px;
-		h5 {
-			padding-top: 10px;
-		}
-		h1+h5 {
-			padding-bottom: 50px;
-		}
-	}
-	.intro-text {
-		width: 75%;
-		padding-bottom: 30px;
-		p {
-			padding-bottom: 10px;
-		}
-	}
-	section {
-		padding-bottom: 80px;
-	}
-	.credit {
+	padding-left: 5px;
+	padding-right: 150px;
+	.article-footer {
 		h6 {
+			font-size: 0.8em;
 			line-height: 20px;
 		}
-		margin-top: 100px;
-		border-top: 1px solid black; 
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.text-center {
-		text-align: center;
-		padding-left: 100px;
-		padding-right: 100px;
-	}
-}
-
-.quote {
-	padding-left: 10px;
-	border-left: 1px solid black;
-	p {
-		font-size: 0.9em;
-		padding-bottom: 0px;
-		margin-bottom: 30px;
-		line-height: 1.9em;
 	}
 }

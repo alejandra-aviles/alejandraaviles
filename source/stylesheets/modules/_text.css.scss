@@ -1,36 +1,76 @@
 .text {
-	padding-top: 30px;
-	width: 70%;
+	padding-left: 3px;
+	padding-top: 40px;
 	header {
-		padding-top: 20px;
-		padding-bottom: 60px;
-		h4 {
-			font-size: 0.9em;
-			letter-spacing: 1px;
+		margin-bottom: 60px;
+		font-family: "times-new-roman";
+		h2 {
+			font-size: 2.8em;
 		}
-	}
-	p {
-		font-size: 1.1em;
-		padding-bottom: 20px;
-		letter-spacing: 1px;
-		line-height: 1.5em;
+		h6 {
+			padding-top: 10px;
+		}
 	}
 	.center {
 		text-align: center;
-		padding: 60px;
+		padding: 30px;
+	}
+
+	p {
+		padding-bottom: 30px;
 	}
 
 	.interview {
 		padding-top: 30px;
 		padding-bottom: 30px;
 		h3 {
+			font-family: "times-new-roman";
+			text-align: justify;
 			font-weight: 600;
 			padding-bottom: 10px;
+			font-size: 1.1em;
+			line-height: 22px;
 		}
 		p {
 			font-weight: 400;
-			font-size: 0.9em;
+			font-size: 1em;
 		}
 
+	}
+}
+
+.item-text {
+	margin-right: 50px;
+	margin-left: 2px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	border-bottom: 3px solid black;
+	p {
+		font-size: 1em;
+		line-height: 20px;
+	}
+	h2 {
+	font-family: "times-new-roman";
+	}
+	h5 {
+		padding-top: 5px;
+		padding-bottom: 18px;
+	}
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+		color: black;
+	}
+}
+
+
+.quote {
+
+	font-family: "times-new-roman";
+	font-style: italic;
+	p {
+		padding-bottom: 30px;
 	}
 }

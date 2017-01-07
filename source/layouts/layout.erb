@@ -1,33 +1,34 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <!-- Always force latest IE rendering engine or request Chrome Frame -->
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <!-- Use title if it's in the page YAML frontmatter -->
-  <title><%= data.page.title || "Alejandra Avil&eacute;s" %></title>  
-  <script src="https://use.typekit.net/czs7nam.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <%= stylesheet_link_tag "screen" %>
-<body class="<%= page_classes %>">
-<div class="main">
-  <div class="nav-bar">
-    <div class="logo">
-      <h1>alejandra avilés</h1>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= data.page.title || "Alejandra Avil&eacute;s" %></title>  
+    <script src="https://use.typekit.net/czs7nam.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <%= stylesheet_link_tag "screen" %>
+  </head>
+
+  <body class="<%= page_classes %> <%= current_page.data.section %>">
+      <div class="main-nav">
+          <a class="logo" id="logo" href="/">Alejandra Avilés</a>
+          <a class="work" id="work" href="/">Selected Work</a>
+          <a class="about" id="about" href="/about">About</a>
+          <a class="text" id="text" href="/text">Text</a>
+          <a class="webdesign" target="webdesig" id="webdesign" href="http://alecamp.com/">Web Design</a>
+      </div>
+    <div class="main">
+      <div class="container">
+          <%= yield_content :fullpage %>
+          <%= yield %>
+      </div>
     </div>
-    <a class="projects" href="/-projects">projects</a>
-    <a class="cv" href="/-cv">cv</a>
-    <a class="dossier" target="dossier" href="/alejandra-aviles-dossier.en.pdf">dossier.pdf</a>
-    <div class="contact">
-        <h5>alehandra.aviles@gmail.com</h5>    
-    </div>
-  </div>
-</div>
-  <%= yield_content :fullpage %>
-  <%= yield %>
-  <%= javascript_include_tag  "application" %>  
-</body>
+    <%= javascript_include_tag  "application" %>  
+  </body>
 </html>
