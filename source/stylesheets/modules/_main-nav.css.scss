@@ -4,7 +4,7 @@
 	top: 0;
 	z-index: 3000;
 	background: white;
-	border-bottom: 5px solid black;
+	border-bottom: 3px solid black;
 	padding-top: 8px;
 	padding-bottom: 5px;
 	margin-left: 35px;
@@ -21,19 +21,19 @@
 	}
 	.work:hover {
 		color: #005aff;
-		border-bottom: 5px solid #005aff;
+		border-bottom: 3px solid #005aff;
 	}
 
 	.about:hover {
 		color: red;
-		border-bottom: 5px solid red;
+		border-bottom: 3px solid red;
 	}
 	.text:hover {
 		color: #f38eff;
-		border-bottom: 5px solid #f38eff;
+		border-bottom: 3px solid #f38eff;
 	}
 	 .webdesign:hover {
-	 	color: orange;
-	 	border-bottom: 5px solid orange;
+	 	color: #28dab1;
+	 	border-bottom: 3px solid #28dab1;
 	}
 } 
